@@ -8,7 +8,7 @@ import Header from "../components/Header";
 function InvoiceForm() {
   const id = crypto.randomUUID().substring(0, 8);
   const date = Date().substring(4, 16);
-  const dataRef = useRef(null);
+  const dataRef = useRef();
   const [panel, setPanel] = useState(false);
   const panelClose = () => {
     setPanel(false);
@@ -154,7 +154,7 @@ function InvoiceForm() {
           </p>
           <button
             className="bg-gradient-to-r from-pink-600 to-purple-600 w-[120px] place-self-end mr-[6%] mt-5 rounded-lg font-bold hover:text-white p-1 "
-            onClick={handlePrint}
+            onClick={submitFunction}
           >
             Print View
           </button>
