@@ -53,7 +53,7 @@ function InvoiceForm() {
     }));
   };
   return (
-    <div className="w-full h-auto bg-slate-300 items-center flex flex-col mx-auto">
+    <div className="w-full h-screen bg-slate-300 items-center flex flex-col mx-auto">
       <Header />
       <form
         ref={dataRef}
